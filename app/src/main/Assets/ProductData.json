@@ -1,0 +1,71 @@
+[
+  {
+    "price": "N700",
+    "name": "Beef",
+    "image": "img/beef.png",
+    "is_in_stock": "yes"
+  },
+
+  {
+    "price": "N1000",
+    "name": "Chicken",
+    "image": "img/chicken.png",
+    "is_in_stock": "yes"
+  },
+
+  {
+    "price": "N500",
+    "name": "Starter",
+    "image": "img/starter.png",
+    "is_in_stock": "yes"
+  },
+
+  {
+    "price": "N400",
+    "name": "Pasta",
+    "image": "img/pasta.png",
+    "is_in_stock": "no"
+  },
+
+  {
+    "price": "N600",
+    "name": "Pork",
+    "image": "img/pork.png",
+    "is_in_stock": "no"
+  },
+
+  {
+    "price": "N400",
+    "name": "Rice and stew",
+    "image": "img/rice_and_stew.png",
+    "is_in_stock": "yes"
+  },
+
+  {
+    "price": "N700",
+    "name": "Lamb",
+    "image": "img/lamb.png",
+    "is_in_stock": "no"
+  },
+
+  {
+    "price": "N500",
+    "name": "Dessert",
+    "image": "img/dessert.png",
+    "is_in_stock": "yes"
+  },
+
+  {
+    "price": "N500",
+    "name": "Beans and plantain",
+    "image": "img/beans_and_plantain.png",
+    "is_in_stock": "yes"
+  },
+
+  {
+    "price": "N300",
+    "name": "Fish",
+    "image": "img/fish.png",
+    "is_in_stock": "no"
+  }
+]
