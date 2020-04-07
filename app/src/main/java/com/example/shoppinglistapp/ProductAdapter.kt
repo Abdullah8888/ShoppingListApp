@@ -1,7 +1,9 @@
 package com.example.shoppinglistapp
 
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +11,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.shoppinglistapp.model.Products
+import java.io.ByteArrayOutputStream
 
 class ProductAdapter(private val products: List<Products>) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
@@ -27,7 +30,11 @@ class ProductAdapter(private val products: List<Products>) : RecyclerView.Adapte
             intent.putExtra("title", products[holder.adapterPosition].name)
             intent.putExtra("price", products[holder.adapterPosition].price)
             intent.putExtra("is_in_stock", products[holder.adapterPosition].isInStock)
-            intent.putExtra("image", products[holder.adapterPosition].image.toString())
+            val bitmapImage = BitmapFactory.decodeStream(products[holder.adapterPosition].image)
+//            val stream = ByteArrayOutputStream()
+//            bitmapImage.compress(Bitmap.CompressFormat.PNG, 100, stream)
+//            val byteArray = stream.toByteArray()
+            intent.putExtra("image", bitmapImage)
             parent.context.startActivity(intent)
         }
         return holder
@@ -43,15 +50,7 @@ class ProductAdapter(private val products: List<Products>) : RecyclerView.Adapte
         if (products[position].isInStock == "no")  {
             holder.isInStock.visibility = View.GONE
         }
-//        priceconte
-//        Picasso.get().load(File.createTempFile())
-//        Picasso.get()
-//            .load(File(parent.con.filesDir, filename))
-//            .into(imageView)
-//ass
-//        val inputStream = assets.
-//        val bb = BitmapFactory.decodeStream(gg)
-//        banner.setImageBitmap(bb)
+
     }
 
 

@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/banner2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/banner222"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/banner"
         app:layout_constraintRight_toRightOf="@id/banner"
         app:layout_constraintTop_toTopOf="@+id/banner"
         android:scaleType="centerCrop"
