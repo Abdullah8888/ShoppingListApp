@@ -47,7 +47,6 @@ class MainActivity : AppCompatActivity() {
             val price  = productArray.getJSONObject(i).getString("price")
             val imagePath = productArray.getJSONObject(i).getString("image")
             val isInStock = productArray.getJSONObject(i).getString("is_in_stock")
-            Log.e("check1", "here i am")
             val imageInputStream = assets.open(imagePath)
 
             pro.add(Products(name, price, imageInputStream, isInStock))
