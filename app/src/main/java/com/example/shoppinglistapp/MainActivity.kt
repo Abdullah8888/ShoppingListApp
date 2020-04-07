@@ -25,12 +25,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun displayBanner() {
-        val imagePath = "img/healthy_food.png"
+        val imagePath = "img/shop_food.png"
         val imageBitmap = assets.open(imagePath)
         val imageDecodedStream = BitmapFactory.decodeStream(imageBitmap)
         banner.setImageBitmap(imageDecodedStream)
 
-        banner2.bringToFront()
+        //banner2.bringToFront()
 
     }
 
