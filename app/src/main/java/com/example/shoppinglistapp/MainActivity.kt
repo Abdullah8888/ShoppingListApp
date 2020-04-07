@@ -9,16 +9,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
 import java.io.InputStream
 import android.graphics.BitmapFactory
-import android.graphics.Bitmap
-import java.io.File
-import android.os.Environment
-import android.net.Uri
-import android.widget.ImageView
-import com.squareup.picasso.Picasso
-import android.graphics.drawable.Drawable
-import android.media.ImageReader
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 
 
 class MainActivity : AppCompatActivity() {
@@ -41,8 +32,6 @@ class MainActivity : AppCompatActivity() {
 
         banner2.bringToFront()
 
-        //Picasso.get().load("img/banner23.png").into(banner);
-
     }
 
     fun displayHomeScreenProducts() {
@@ -64,15 +53,11 @@ class MainActivity : AppCompatActivity() {
             pro.add(Products(name, price, imageInputStream, isInStock))
         }
 
-//        Picasso.get().load(R.drawable.banner222)
-//                          .config(Bitmap.Config.RGB_565)
-//                        .fit().centerCrop().into(banner);
-
         recycler_view.apply {
             layoutManager = GridLayoutManager(this@MainActivity, 2)
             adapter = ProductAdapter(pro)
         }
-        //banner.setImageResource(R.drawable.banner222)
+
     }
 }
 
